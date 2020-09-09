@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title th:text="${locale}"/>-->
+</head>
+<body>
+
+
+<table border="1">
+    <caption th:text="${title}"/>
+
+    <tr th:each="msg : ${carsList}">
+
+        <td th:text="${msg.getName()}"/>
+        <td th:text="${msg.getNumber()}"/>
+        <td th:text="${msg.getColor()}"/>
+    </tr>
+</table>
+
+</body>
+</html>
